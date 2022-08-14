@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='$helps'))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='$help'))
 
 @client.event
 async def on_message(message):
@@ -21,7 +21,6 @@ async def on_message(message):
         return
     if message.content.startswith('$help'):
         await message.reply("Use - $check _Your link_ to check if a link is a rick roll :)",mention_author = True)
-        
     if message.content.startswith('$check'):
         payload = {'url':str(message.content).split('$check ')[1]}
         try:
