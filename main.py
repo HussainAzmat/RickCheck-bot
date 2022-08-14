@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print('Logged in as {0.user}'.format(client))
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='$help'))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='$helps'))
 
 @client.event
 async def on_message(message):
