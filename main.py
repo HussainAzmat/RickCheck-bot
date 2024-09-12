@@ -2,7 +2,7 @@ import discord
 import requests as r
 api = 'https://api.fyro.ml/rickroll/'
 
-my_secret = 'MTAwNjUzOTg2MzE4Njc0NzQ0Mg.Goi1MV.4WSZNeG0dyTu04u4PoUJnXIiXKqplK_KclPds8'
+my_secret = 'your token here'
 
 client = discord.Client()
 
